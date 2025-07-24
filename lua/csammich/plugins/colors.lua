@@ -7,23 +7,46 @@ end
 
 return {
   {
-    'rose-pine/neovim',
-    as = 'rose-pine',
+    'stevedylandev/darkmatter-nvim',
+    name = 'darkmatter',
+    lazy = false,
     priority = 1000,
+    config = function()
+      ColorMyPencils 'darkmatter'
+    end,
+  },
+  {
+    'webhooked/kanso.nvim',
+    name = 'kanso',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('kanso').setup {
+        bold = true,
+        undercurl = true,
+        terminalColors = true,
+        theme = 'zen',
+        background = {
+          dark = 'zen',
+        },
+      }
+      -- ColorMyPencils 'kanso'
+    end,
+  },
+  {
+    'folke/tokyonight.nvim',
+    name = 'tokyonight',
+    config = function() end,
+  },
+  {
+    'rose-pine/neovim',
+    name = 'rose-pine',
     config = function()
       require('rose-pine').setup {
         styles = {
           italic = false,
         },
-        ColorMyPencils(),
       }
-    end,
-  },
-  {
-    'folke/tokyonight.nvim',
-    -- priority = 1000, -- Make sure to load this before all the other start plugins.
-    config = function()
-      ColorMyPencils()
     end,
   },
 }
