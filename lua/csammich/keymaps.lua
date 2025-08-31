@@ -28,13 +28,3 @@ vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left wind
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
-
--- View add_file projects marks.
-vim.keymap.set('n', '<leader>h', ":lua require('harpoon.ui').toggle_quick_menu()<CR>")
-
--- Marks the file to revisit later.
-vim.keymap.set('n', '<leader>ha', ":lua require('harpoon.mark').add_file()<CR>")
-
-vim.keymap.set('n', '<leader>hq', ":lua require('harpoon.ui').nav_prev()<CR>")
-
-vim.keymap.set('n', '<leader>he', ":lua require('harpoon.ui').nav_next()<CR>")
