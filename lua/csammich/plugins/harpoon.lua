@@ -28,7 +28,7 @@ return {
         mode = 'n',
       },
       {
-        '<C-h>',
+        '<leader>ph',
         function()
           harpoon.ui:toggle_quick_menu(harpoon:list())
         end,
