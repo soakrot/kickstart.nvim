@@ -11,9 +11,7 @@ return {
     name = 'darkmatter',
     lazy = false,
     priority = 1000,
-    config = function()
-      ColorMyPencils 'darkmatter'
-    end,
+    config = function() end,
   },
   {
     'webhooked/kanso.nvim',
@@ -47,6 +45,7 @@ return {
           italic = false,
         },
       }
+      ColorMyPencils 'rose-pine'
     end,
   },
 }
