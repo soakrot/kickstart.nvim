@@ -36,6 +36,42 @@ return {
         icon = '󰛢',
         mode = 'n',
       },
+      {
+        '<M-1>',
+        function()
+          harpoon:list():select(1)
+        end,
+        desc = 'Go to file [1]',
+        icon = '󰛢',
+        mode = 'n',
+      },
+      {
+        '<M-2>',
+        function()
+          harpoon:list():select(2)
+        end,
+        desc = 'Go to file [2]',
+        icon = '󰛢',
+        mode = 'n',
+      },
+      {
+        '<M-3>',
+        function()
+          harpoon:list():select(3)
+        end,
+        desc = 'Go to file [3]',
+        icon = '󰛢',
+        mode = 'n',
+      },
+      {
+        '<M-4>',
+        function()
+          harpoon:list():select(4)
+        end,
+        desc = 'Go to file [4]',
+        icon = '󰛢',
+        mode = 'n',
+      },
     }
 
     harpoon:setup()

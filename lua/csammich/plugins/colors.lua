@@ -4,8 +4,18 @@ function ColorMyPencils(color)
   vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
   vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
 end
-
 return {
+  {
+    'vague-theme/vague.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('vague').setup {
+        -- optional configuration here
+      }
+      ColorMyPencils 'vague'
+    end,
+  },
   {
     'stevedylandev/darkmatter-nvim',
     name = 'darkmatter',
@@ -16,8 +26,6 @@ return {
   {
     'webhooked/kanso.nvim',
     name = 'kanso',
-    lazy = false,
-    priority = 1000,
     config = function()
       require('kanso').setup {
         bold = true,
@@ -45,7 +53,7 @@ return {
           italic = false,
         },
       }
-      ColorMyPencils 'rose-pine'
+      -- ColorMyPencils 'rose-pine'
     end,
   },
 }

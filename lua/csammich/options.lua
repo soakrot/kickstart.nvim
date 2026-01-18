@@ -29,8 +29,10 @@ vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
 end)
 
-vim.o.tabstop = 4
-vim.o.shiftwidth = 4
+vim.o.expandtab = true
+vim.o.tabstop = 8
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 2
 
 -- Enable break indent
 vim.o.breakindent = true
