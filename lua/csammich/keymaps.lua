@@ -2,7 +2,6 @@
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('i', 'jj', '<Esc>')
-vim.keymap.set('i', 'll', '<Esc>', { desc = 'Switch to normal mode' })
 vim.keymap.set('n', '<leader>pf', vim.cmd.Ex, { desc = 'preview [f]iles' })
 
 -- Diagnostic keymaps

@@ -6,14 +6,18 @@ function ColorMyPencils(color)
 end
 return {
   {
-    'vague-theme/vague.nvim',
+    'AlexvZyl/nordic.nvim',
     lazy = false,
     priority = 1000,
     config = function()
-      require('vague').setup {
-        -- optional configuration here
-      }
-      ColorMyPencils 'vague'
+      require('nordic').load()
+      ColorMyPencils 'nordic'
+    end,
+  },
+  {
+    'vague-theme/vague.nvim',
+    config = function()
+      require('vague').setup {}
     end,
   },
   {
